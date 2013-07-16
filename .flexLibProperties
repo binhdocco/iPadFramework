@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flexLibProperties version="1">
+<includeClasses>
+<classEntry path="com.binhdocco.events.OutputEvent"/>
+<classEntry path="com.binhdocco.events.NavigationEvent"/>
+<classEntry path="org.bytearray.smtp.encoding.JPEGEncoder"/>
+<classEntry path="org.bytearray.smtp.infos.SMTPInfos"/>
+<classEntry path="com.binhdocco.persistenceobjects.mailsender.MailObject"/>
+<classEntry path="com.binhdocco.navigationobjects.MenuObject"/>
+<classEntry path="com.binhdocco.transitions.SimpleCoverFlow"/>
+<classEntry path="org.bytearray.smtp.events.SMTPEvent"/>
+<classEntry path="org.bytearray.smtp.utils.IntUtil"/>
+<classEntry path="com.binhdocco.persistenceobjects.mailsender.MailSender"/>
+<classEntry path="com.binhdocco.persistenceobjects.IPersistanceObject"/>
+<classEntry path="com.binhdocco.events.PersistenceDataEvent"/>
+<classEntry path="com.binhdocco.utils.UIDUtil"/>
+<classEntry path="org.bytearray.smtp.encoding.Base64"/>
+<classEntry path="com.binhdocco.assetobjects.AssetObjectContainer"/>
+<classEntry path="com.binhdocco.utils.IdleTimer"/>
+<classEntry path="com.debug.Stats"/>
+<classEntry path="com.binhdocco.events.GotoSceneEvent"/>
+<classEntry path="com.binhdocco.events.AppEvent"/>
+<classEntry path="com.binhdocco.assetobjects.AssetObject"/>
+<classEntry path="com.binhdocco.utils.TronTime"/>
+<classEntry path="com.binhdocco.dispatcher.Dispatcher"/>
+<classEntry path="com.binhdocco.assetobjects.IAssetObject"/>
+<classEntry path="com.binhdocco.events.InternetConnectionEvent"/>
+<classEntry path="com.shinedraw.controls.IPhoneScroll2"/>
+<classEntry path="org.bytearray.smtp.mailer.SMTPMailer"/>
+<classEntry path="com.binhdocco.transitions.SwitchTransition"/>
+<classEntry path="com.binhdocco.navigationobjects.MenuVerticalObject"/>
+<classEntry path="com.binhdocco.utils.NewScrollbar"/>
+<classEntry path="com.binhdocco.assetobjects.SimpleAssetObject"/>
+<classEntry path="com.binhdocco.utils.KeepMouseDownOnTarget"/>
+<classEntry path="com.binhdocco.sceneobjects.ISceneObject"/>
+<classEntry path="com.binhdocco.navigationobjects.NavigationObject"/>
+<classEntry path="org.bytearray.smtp.crypto.MD5"/>
+<classEntry path="com.binhdocco.persistenceobjects.PersistanceObject"/>
+<classEntry path="com.binhdocco.persistenceobjects.mailsender.MailConnection"/>
+<classEntry path="org.bytearray.smtp.encoding.PNGEnc"/>
+<classEntry path="com.binhdocco.utils.CheckMouseDoubleClick"/>
+<classEntry path="com.binhdocco.navigationobjects.IMenuObject"/>
+<classEntry path="com.binhdocco.utils.InternetConnection"/>
+<classEntry path="com.binhdocco.events.DataTransferEvent"/>
+<classEntry path="com.binhdocco.persistenceobjects.TrackingObject"/>
+<classEntry path="com.binhdocco.utils.DataTransfer"/>
+<classEntry path="com.shinedraw.controls.IPhoneScroll"/>
+<classEntry path="com.binhdocco.persistenceobjects.RestoreLastScreen"/>
+<classEntry path="com.binhdocco.events.LogEvent"/>
+<classEntry path="com.binhdocco.sceneobjects.SceneObject"/>
+<classEntry path="com.binhdocco.sceneobjects.SceneIndex"/>
+<classEntry path="com.binhdocco.utils.Utilities"/>
+<classEntry path="com.binhdocco.utils.CounterTimer"/>
+<classEntry path="com.binhdocco.events.DynamicEvent"/>
+<classEntry path="com.binhdocco.managers.ApplicationManager"/>
+<classEntry path="com.binhdocco.utils.Scrollbar"/>
+<classEntry path="com.binhdocco.events.MailEvent"/>
+<classEntry path="com.binhdocco.events.SceneEvent"/>
+</includeClasses>
+<includeResources/>
+<namespaceManifests/>
+</flexLibProperties>
