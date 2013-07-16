@@ -1,3 +1,8 @@
+iPadFramework
+=====
+
+AS3 engine to play presentation on iOS, Android
+
 + Version 1.1.7	
 
 + Version 1.1.4 (08 Aug 2012)
