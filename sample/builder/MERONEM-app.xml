@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<application xmlns="http://ns.adobe.com/air/application/3.4">
+
+  <id>com.drcomhealth.azvnedmarcain2013</id>
+
+  <versionNumber>1.0.1</versionNumber>
+
+  <filename>MERONEM</filename>
+
+  <description/>
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+<!-- To localize the description, use the following format for the description element.<description><text xml:lang="en">English App description goes here</text><text xml:lang="fr">French App description goes here</text><text xml:lang="ja">Japanese App description goes here</text></description>-->
+
+  <name>MARCAIN</name>
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+<!-- To localize the name, use the following format for the name element.<name><text xml:lang="en">English App name goes here</text><text xml:lang="fr">French App name goes here</text><text xml:lang="ja">Japanese App name goes here</text></name>-->
+
+  <copyright/>
+
+  <initialWindow>
+    <content>MERONEM.swf</content>
+    <systemChrome>standard</systemChrome>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <fullScreen>true</fullScreen>
+    <aspectRatio>landscape</aspectRatio>
+    <renderMode>gpu</renderMode>
+    <autoOrients>true</autoOrients>
+  </initialWindow>
+
+  <icon>
+    <image29x29>AppIconsForPublish/icon29.png</image29x29>
+    <image57x57>AppIconsForPublish/icon57.png</image57x57>
+	<image72x72>AppIconsForPublish/icon72.png</image72x72>
+	<image144x144>AppIconsForPublish/icon144.png</image144x144>
+    <image512x512>AppIconsForPublish/icon512.png</image512x512>
+  </icon>
+
+  <customUpdateUI>false</customUpdateUI>
+
+  <allowBrowserInvocation>false</allowBrowserInvocation>
+
+  <iPhone>
+    <InfoAdditions>
+      
+      <![CDATA[<key>UIDeviceFamily</key><array><string>2</string></array>]]>
+    </InfoAdditions>
+  </iPhone>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</application>
