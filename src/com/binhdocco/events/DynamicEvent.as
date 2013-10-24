@@ -6,7 +6,8 @@ package com.binhdocco.events
 	{
 		public var params: Object;
 		
-		public function DynamicEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)	{
+		public function DynamicEvent(type:String, obj: Object = null, bubbles:Boolean=false, cancelable:Boolean=false)	{
+			this.params = obj;
 			super(type, bubbles, cancelable);
 		}
 		

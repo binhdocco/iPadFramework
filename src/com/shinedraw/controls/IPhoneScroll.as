@@ -41,18 +41,6 @@ Below is a list of modifications I did.
 	* Added percPosition property to make it easy to create a ScrollBar outside of this class
 	* Added the "stop" property so that this item can be controlled outside without interfering with this process
 	* created a property for "myScrollItem"
-	* 
-	* USE:
-	* 	+ Initialize: 
-	* 		var _scroller:IPhoneScroll = new IPhoneScroll( mcContent.mcPage, stage );
-			_scroller.canvasHeight = 366;
-		+ Destroy:
-			_scroller.release();
-			_scroller = null;
-		+ Restart:
-			_scroller.stop();
-			_scroller.myScrollElement.y = 0;
-			_scroller.start();
 
 ****************************************************************************/
 
@@ -69,10 +57,10 @@ package com.shinedraw.controls {
 	public class IPhoneScroll {
 
         // Constant variables
-        public static var DECAY:Number = 0.93;
-        public static var MOUSE_DOWN_DECAY:Number = 0.5;
-        public static var SPEED_SPRINGNESS:Number = 0.4;
-        public static var BOUNCING_SPRINGESS:Number = 0.2;
+        private static var DECAY:Number = 0.93;
+        private static var MOUSE_DOWN_DECAY:Number = 0.5;
+        private static var SPEED_SPRINGNESS:Number = 0.4;
+        private static var BOUNCING_SPRINGESS:Number = 0.2;
 
 		// variables
         private var _mouseDown:Boolean = false;
@@ -86,6 +74,8 @@ package com.shinedraw.controls {
 		private var _myScrollElement:DisplayObjectContainer;
 		private var _stage:Stage;
 		private var _started:Boolean;
+		
+		public var standBy: Boolean = false;
 		
 		public function IPhoneScroll( pContent:DisplayObjectContainer, pStage:Stage ) {
 			_stage = pStage;
@@ -104,8 +94,19 @@ package com.shinedraw.controls {
 			if ( started )
 			{
 				// decay the velocity
-				if(_mouseDown) _velocity *= MOUSE_DOWN_DECAY;
-				else _velocity *= DECAY;
+				if (_mouseDown) {
+					standBy = false;
+					_velocity *= MOUSE_DOWN_DECAY;
+				}
+				else {
+					_velocity *= DECAY;
+					if (Math.abs(_velocity) <= 0.05 ) {
+						standBy = true;
+					}
+					if (Math.abs(_velocity) < 0.02 ) {
+						_velocity = 0;
+					}
+				}
 				
 				
 				// if not mouse down, then move the element with the velocity
@@ -117,7 +118,7 @@ package com.shinedraw.controls {
 					var bouncing:Number = 0;
 					
 					// calculate a bouncing when the text moves over the canvas size
-					if (y > 0)
+					if (y > 0 || textHeight <= _canvasHeight) // textHeight <= _canvasHeight => when the item is smaller than the stage.height, align to the top
 					{
 						bouncing = -y * BOUNCING_SPRINGESS;
 					}else if( y + textHeight < _canvasHeight){
