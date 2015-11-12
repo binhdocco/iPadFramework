@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1"?> 
+<data>
+	<!-- http://www.greensock.com/loadermax-tips/ -->
+	<LoaderMax name="swfPreLoaderMax" prependURLs="../assets/swf/" load="false">
+		<SWFLoader url="S01.swf" name="S01" autoPlay="false" />
+		<SWFLoader url="S02.swf" name="S02" autoPlay="false" />
+		<SWFLoader url="S03.swf" name="S03" autoPlay="false" />
+		<SWFLoader url="S04.swf" name="S04" autoPlay="false" />
+		<SWFLoader url="S05.swf" name="S05" autoPlay="false" />
+	</LoaderMax>
+</data>
