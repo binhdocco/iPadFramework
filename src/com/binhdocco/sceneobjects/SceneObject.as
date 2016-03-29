@@ -7,6 +7,7 @@
 	
 	import flash.display.MovieClip;
 	import flash.display.StageQuality;
+	import flash.media.SoundTransform;
 	import flash.system.System;
 	
 	/**
@@ -77,6 +78,10 @@
 			if (slide.hasOwnProperty("destroy")) {
 				slide.destroy();
 			}	
+			//mute all sounds
+			var muteTransform:SoundTransform = new SoundTransform();
+			muteTransform.volume = 0;
+			slide.soundTransform = muteTransform;
 		}
 		
 		public function slideScreen(index: int, directionY: int): void {	
